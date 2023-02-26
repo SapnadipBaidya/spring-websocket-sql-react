@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "com.chatapp.springwsreattimechatapp.service.MessageSevice" table = "chatPrivateUsers">
+      
+      <meta attribute = "class-description">
+         This class contains the user message detail. 
+      </meta>
+      
+      <id name = "usrId" type = "java.lang.Integer" column = "usr_id">
+         <generator class="native"/>
+      </id>
+      
+      <property name = "userName" column = "user_name" type = "string" length="100"/>
+      <property name = "meassage" column = "meassage" type = "string" length="500"/>
+      
+   </class>
+</hibernate-mapping>
